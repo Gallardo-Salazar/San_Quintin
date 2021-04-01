@@ -1,4 +1,5 @@
 <!doctype html>
+<title>San Quintín</title>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -12,7 +13,7 @@
         <style>
         html, body, #map {
             width: 100%;
-            height: 100%;
+            height: 98%;
             padding: 0;
             margin: 0;
         }
@@ -20,6 +21,7 @@
         <title></title>
     </head>
     <body>
+	</a><h2 align=center>Cañada San Quintín, Durango México</h1>
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
@@ -50,9 +52,9 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[23.905009882073973,-104.20005576909054],[23.910117131510273,-104.19037385049185]]);
+        }).fitBounds([[23.9044937341648,-104.20043226135203],[23.909731861868373,-104.19050224721668]]);
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        map.attributionControl.setPrefix('<h1 align=center><br><a href="https://gallardo-salazar.github.io/PC_SQ/">3D Model</a></h1><a href="https://www.ujed.mx/"><div align="center"><img src="fotos/ujed.png" width="100">');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
         var measureControl = new L.Control.Measure({
@@ -75,7 +77,7 @@
         var layer_GoogleSatellite_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
             pane: 'pane_GoogleSatellite_0',
             opacity: 1.0,
-            attribution: '<a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>',
+            attribution: '',
             minZoom: 1,
             maxZoom: 28,
             minNativeZoom: 0,
@@ -83,35 +85,44 @@
         });
         layer_GoogleSatellite_0;
         map.addLayer(layer_GoogleSatellite_0);
-        map.createPane('pane_Modelodigitaldeterreno_1');
-        map.getPane('pane_Modelodigitaldeterreno_1').style.zIndex = 401;
-        var img_Modelodigitaldeterreno_1 = 'data/Modelodigitaldeterreno_1.png';
-        var img_bounds_Modelodigitaldeterreno_1 = [[23.904536050150636,-104.1981986724759],[23.909381459819798,-104.1927105617567]];
-        var layer_Modelodigitaldeterreno_1 = new L.imageOverlay(img_Modelodigitaldeterreno_1,
-                                              img_bounds_Modelodigitaldeterreno_1,
-                                              {pane: 'pane_Modelodigitaldeterreno_1'});
-        bounds_group.addLayer(layer_Modelodigitaldeterreno_1);
-        map.addLayer(layer_Modelodigitaldeterreno_1);
-        map.createPane('pane_Modelodigitaldesuprficie_2');
-        map.getPane('pane_Modelodigitaldesuprficie_2').style.zIndex = 402;
-        var img_Modelodigitaldesuprficie_2 = 'data/Modelodigitaldesuprficie_2.png';
-        var img_bounds_Modelodigitaldesuprficie_2 = [[23.904536638784478,-104.1981979062852],[23.90938131835742,-104.19271121825501]];
-        var layer_Modelodigitaldesuprficie_2 = new L.imageOverlay(img_Modelodigitaldesuprficie_2,
-                                              img_bounds_Modelodigitaldesuprficie_2,
-                                              {pane: 'pane_Modelodigitaldesuprficie_2'});
-        bounds_group.addLayer(layer_Modelodigitaldesuprficie_2);
-        map.addLayer(layer_Modelodigitaldesuprficie_2);
-        map.createPane('pane_Ortomosaico_3');
-        map.getPane('pane_Ortomosaico_3').style.zIndex = 403;
-        var img_Ortomosaico_3 = 'data/Ortomosaico_3.png';
-        var img_bounds_Ortomosaico_3 = [[23.90453657178199,-104.19819854592066],[23.90938106947773,-104.19271141516221]];
-        var layer_Ortomosaico_3 = new L.imageOverlay(img_Ortomosaico_3,
-                                              img_bounds_Ortomosaico_3,
-                                              {pane: 'pane_Ortomosaico_3'});
-        bounds_group.addLayer(layer_Ortomosaico_3);
-        map.addLayer(layer_Ortomosaico_3);
+        map.createPane('pane_Modelodealturadedosel_1');
+        map.getPane('pane_Modelodealturadedosel_1').style.zIndex = 401;
+        var img_Modelodealturadedosel_1 = 'data/Modelodealturadedosel_1.png';
+        var img_bounds_Modelodealturadedosel_1 = [[23.904628689552816,-104.19817696776364],[23.909596950861264,-104.19275676715885]];
+        var layer_Modelodealturadedosel_1 = new L.imageOverlay(img_Modelodealturadedosel_1,
+                                              img_bounds_Modelodealturadedosel_1,
+                                              {pane: 'pane_Modelodealturadedosel_1'});
+        bounds_group.addLayer(layer_Modelodealturadedosel_1);
+        map.addLayer(layer_Modelodealturadedosel_1);
+        map.createPane('pane_Modelodigitaldeterreno_2');
+        map.getPane('pane_Modelodigitaldeterreno_2').style.zIndex = 402;
+        var img_Modelodigitaldeterreno_2 = 'data/Modelodigitaldeterreno_2.png';
+        var img_bounds_Modelodigitaldeterreno_2 = [[23.904629067377986,-104.19817723759482],[23.909596637731315,-104.19275736129971]];
+        var layer_Modelodigitaldeterreno_2 = new L.imageOverlay(img_Modelodigitaldeterreno_2,
+                                              img_bounds_Modelodigitaldeterreno_2,
+                                              {pane: 'pane_Modelodigitaldeterreno_2'});
+        bounds_group.addLayer(layer_Modelodigitaldeterreno_2);
+        map.addLayer(layer_Modelodigitaldeterreno_2);
+        map.createPane('pane_Modelodigitaldesuprficie_3');
+        map.getPane('pane_Modelodigitaldesuprficie_3').style.zIndex = 403;
+        var img_Modelodigitaldesuprficie_3 = 'data/Modelodigitaldesuprficie_3.png';
+        var img_bounds_Modelodigitaldesuprficie_3 = [[23.904629067377986,-104.19817723759482],[23.909596637731315,-104.19275736129971]];
+        var layer_Modelodigitaldesuprficie_3 = new L.imageOverlay(img_Modelodigitaldesuprficie_3,
+                                              img_bounds_Modelodigitaldesuprficie_3,
+                                              {pane: 'pane_Modelodigitaldesuprficie_3'});
+        bounds_group.addLayer(layer_Modelodigitaldesuprficie_3);
+        map.addLayer(layer_Modelodigitaldesuprficie_3);
+        map.createPane('pane_Ortofoto_4');
+        map.getPane('pane_Ortofoto_4').style.zIndex = 404;
+        var img_Ortofoto_4 = 'data/Ortofoto_4.png';
+        var img_bounds_Ortofoto_4 = [[23.904628689578566,-104.19817696781237],[23.909596950868043,-104.19275676719293]];
+        var layer_Ortofoto_4 = new L.imageOverlay(img_Ortofoto_4,
+                                              img_bounds_Ortofoto_4,
+                                              {pane: 'pane_Ortofoto_4'});
+        bounds_group.addLayer(layer_Ortofoto_4);
+        map.addLayer(layer_Ortofoto_4);
         var baseMaps = {};
-        L.control.layers(baseMaps,{"Ortomosaico": layer_Ortomosaico_3,"Modelo digital de suprficie": layer_Modelodigitaldesuprficie_2,"Modelo digital de terreno": layer_Modelodigitaldeterreno_1,"Google Satellite": layer_GoogleSatellite_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{"Ortofoto": layer_Ortofoto_4,"Modelo digital de superficie": layer_Modelodigitaldesuprficie_3,"Modelo digital de terreno": layer_Modelodigitaldeterreno_2,"Modelo de altura de dosel": layer_Modelodealturadedosel_1,"Google Satellite": layer_GoogleSatellite_0,},{collapsed:false}).addTo(map);
         setBounds();
         L.ImageOverlay.include({
             getBounds: function () {
